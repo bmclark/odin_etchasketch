@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: cyan;
 }
 
 .header, .footer {
@@ -21,19 +22,17 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: cyan;
+  margin: 5% 10%;
+  border: 2px solid black;
 }
 
 .canvasRow {
   display: flex;
+  flex: 1;
   justify-content: center;
 }
 .canvasBox {
   display: flex;
-  height: 15px;
-  width: 15px;
+  flex: 1;
   background: white;
-  border: 1px solid black;
 }

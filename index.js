@@ -1,5 +1,5 @@
 // create 16x16 grid of divs
-function createRows () {
+function createGrid () {
   for (let i = 1; i <=16; i++) {
     const canvas = document.querySelector('.canvasContainer');
     const row = document.createElement('div');
@@ -16,9 +16,27 @@ function createColumns (row) {
     const column = document.createElement('div');
   
     column.setAttribute('class', 'canvasBox');
-    column.textContent = i;
+    // column.textContent = i;
     row.appendChild(column);
   }
 }
 
-createRows();
+// clear boxes back to white background
+function clear () {
+  const box = document.querySelectorAll('.canvasBox');
+  box.forEach(item => { item.style.backgroundColor = 'white';});
+}
+
+// create grid
+createGrid();
+
+// turn boxes purple when mouse moves over them
+const box = document.querySelectorAll('.canvasBox');
+box.forEach(item => 
+  { item.addEventListener('mouseenter', function( event ) {
+    event.target.style.backgroundColor = 'purple';
+  }, false); 
+});
+
+const button = document.getElementById('button')
+button.addEventListener('onclick', clear);
