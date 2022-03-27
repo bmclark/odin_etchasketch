@@ -38,5 +38,5 @@ box.forEach(item =>
   }, false); 
 });
 
-const button = document.getElementById('button')
-button.addEventListener('onclick', clear);
+const button = document.querySelector('#clear')
+button.addEventListener('click', clear);
