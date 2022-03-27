@@ -19,12 +19,21 @@ body {
 
 .canvasContainer {
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
   background-color: cyan;
 }
 
+.canvasRow {
+  display: flex;
+  justify-content: center;
+}
 .canvasBox {
-  background-color: white;
+  display: flex;
+  height: 15px;
+  width: 15px;
+  background: white;
+  border: 1px solid black;
 }
