@@ -6,7 +6,7 @@ body {
 }
 
 .header, .footer {
-  padding: 24px 10%;
+  padding: 12px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   background-color: cyan;
 }
 
@@ -29,23 +29,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5%;
+  padding-bottom: 12px;
 }
 .canvasContainer {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  margin: 5% 10%;
-  border: 2px solid black;
+  height:480px;
+  width: 480px;
+  border: 5px solid black;
+  margin-top: 18px;
 }
 
 .canvasRow {
   display: flex;
-  flex: 1;
   justify-content: center;
 }
 .canvasBox {
   display: flex;
-  flex: 1;
   background: white;
+  height: 30px;
+  width: 30px;
 }
